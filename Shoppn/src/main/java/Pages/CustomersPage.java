@@ -8,9 +8,9 @@ public class CustomersPage extends PageBase{
     public CustomersPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//span[text()='العملاء'")
+    @FindBy(xpath = "//span[contains(text(),'العملاء')]")
     WebElement CustomersTab;
-    @FindBy(xpath = "//span[text()='لا يوجد محفوظات']")
+    @FindBy(xpath = "//h3[contains(text(),'العملاء')]")
     public WebElement MessageText;
 
     public void openCustomersTab(){

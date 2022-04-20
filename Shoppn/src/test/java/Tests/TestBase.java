@@ -20,9 +20,9 @@ public class TestBase {
         driver.navigate().to("https://webstdy-011.shoppn.io/dashboard");
 
     }
-    @AfterSuite
-    public void stopDriver(){
-        driver.quit();
-}
+//    @AfterSuite
+//    public void stopDriver(){
+//        driver.quit();
+//}
 
 }

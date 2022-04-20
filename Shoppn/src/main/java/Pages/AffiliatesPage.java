@@ -8,7 +8,7 @@ public class AffiliatesPage extends PageBase {
     public AffiliatesPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//span[contains(text(),'نظام التسويق بالعمولة')]")
+    @FindBy(xpath = "//*[@id=\"kt_aside_menu\"]/ul/li[17]/a/span[2]")
     WebElement affilliateMain;
     @FindBy(xpath = "//span[contains(text(),'المسوقين بالعمولة')]")
     WebElement affilliateTab;

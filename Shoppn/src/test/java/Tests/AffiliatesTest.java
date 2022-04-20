@@ -12,7 +12,7 @@ public class AffiliatesTest extends TestBase {
      AffiliatesPage affiliatesPage;
 
     @Test
-    public void checkSimpleProductTabOpen(){
+    public void checkAffiliteTabOpen(){
         loginPage = new LoginPage(driver);
         affiliatesPage = new AffiliatesPage(driver);
         loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");

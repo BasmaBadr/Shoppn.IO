@@ -14,7 +14,7 @@ public class CutomersTest extends TestBase{
       loginpPage = new LoginPage(driver);
       loginpPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
       customersPage.openCustomersTab();
-      Assert.assertTrue(customersPage.MessageText.getText().contains("لا يوجد محفوظات"));
-
+      Assert.assertTrue(customersPage.MessageText.getText().contains("العملاء"));
   }
+
 }
