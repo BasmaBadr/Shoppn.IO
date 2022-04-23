@@ -8,8 +8,8 @@ public class LogOutPage extends PageBase {
     public LogOutPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy()
-    WebElement logOut;
+    @FindBy(xpath = "//span[@class=\"svg-icon menu-icon\"]")
+    public WebElement logOut;
 
     public void clickLogout()
     {

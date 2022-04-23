@@ -1,6 +1,5 @@
 package Tests;
 
-import Pages.AffiliatesPage;
 import Pages.EditStoreDesignPage;
 import Pages.LoginPage;
 import org.openqa.selenium.JavascriptExecutor;

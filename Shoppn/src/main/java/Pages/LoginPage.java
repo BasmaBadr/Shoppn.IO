@@ -15,7 +15,7 @@ public class LoginPage extends PageBase{
     @FindBy(id = "password-field")
     WebElement Password;
     @FindBy(id = "submit-btn")
-    WebElement Submit;
+   public WebElement Submit;
     @FindBy(xpath = "//h1[contains(text(),'مرحبا بك في Shoppn')]")
      public WebElement Welcommessage;
 
