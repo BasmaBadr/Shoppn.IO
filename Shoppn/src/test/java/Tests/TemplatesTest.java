@@ -3,6 +3,9 @@ package Tests;
 import Pages.AffiliatesPage;
 import Pages.LoginPage;
 import Pages.TemplatesPage;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,12 +14,15 @@ public class TemplatesTest extends TestBase {
     TemplatesPage templatesPage;
 
     @Test
-    public void checkTemplatesOpen(){
+    public void checkTemplatesOpen() throws InterruptedException {
         loginPage = new LoginPage(driver);
         templatesPage = new TemplatesPage(driver);
         loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
-        templatesPage.openTemplatesTab();
-        Assert.assertTrue(templatesPage.templatesPage.isDisplayed());
+        Thread.sleep(20000);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", templatesPage.templatesPage);
+       // templatesPage.scrollDown();
+//        templatesPage.openTemplatesTab();
+        //Assert.assertTrue(templatesPage.templatesPage.isDisplayed());
 //        Assert.assertTrue(templatesPage.templatesText.getText().contains("القوالب"));
 //        System.out.println(templatesPage.templatesText.getText());
     }

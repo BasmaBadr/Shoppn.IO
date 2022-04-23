@@ -15,6 +15,7 @@ public class AttributeCategoriesTest extends TestBase {
         loginpage = new LoginPage(driver);
         attributeCategoriesPage= new AttributeCategoriesPage(driver);
         loginpage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+
         attributeCategoriesPage.openAttributeTab();
         Assert.assertTrue(attributeCategoriesPage.attributeText.getText().contains("الخصائص"));
         System.out.println(attributeCategoriesPage.attributeText.getText());

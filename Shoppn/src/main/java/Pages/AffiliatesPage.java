@@ -9,7 +9,7 @@ public class AffiliatesPage extends PageBase {
         super(driver);
     }
     @FindBy(xpath = "//*[@id=\"kt_aside_menu\"]/ul/li[17]/a/span[2]")
-    WebElement affilliateMain;
+  public   WebElement affilliateMain;
     @FindBy(xpath = "//span[contains(text(),'المسوقين بالعمولة')]")
     WebElement affilliateTab;
     @FindBy(xpath = "//h3[contains(text(),'المسوقين بالعمولة')]")

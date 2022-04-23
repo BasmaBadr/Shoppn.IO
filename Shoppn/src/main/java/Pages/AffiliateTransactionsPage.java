@@ -8,8 +8,8 @@ public class AffiliateTransactionsPage extends PageBase {
     public AffiliateTransactionsPage(WebDriver driver) {
         super(driver);
     }
-    @FindBy(xpath = "//span[contains(text(),'نظام التسويق بالعمولة')]")
-    WebElement affilliateMain;
+    @FindBy(xpath = "/*[@id=\"kt_aside_menu\"]/ul/li[17]/a/span[2]")
+   public WebElement affilliateMain;
     @FindBy(xpath = "//span[contains(text(),'التحويلات المالية')]")
     WebElement affilliateTransactionTab;
     @FindBy(xpath = "//h3[contains(text(),'تحويلات الموسوقين المالية')]")

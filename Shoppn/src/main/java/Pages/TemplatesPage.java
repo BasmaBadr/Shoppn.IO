@@ -14,18 +14,17 @@ public class TemplatesPage extends PageBase{
     @FindBy(xpath = "//span[contains(text(),'القوالب')]")
    public WebElement templatesPage;
     @FindBy(xpath = "//h3[contains(text(),'القوالب')]")
-  public WebElement templatesText;
+   public WebElement templatesText;
 
-    public void openTemplatesTab(){
-
-
+    public void scrollDown(){
 //        JavascriptExecutor js = (JavascriptExecutor) driver;
 //        js.executeScript("window.scrollBy(0,1000)");
-        EventFiringWebDriver eventFiringWebDriver = new EventFiringWebDriver(driver);
-        eventFiringWebDriver.executeScript("document.querySelector(body.header-fixed.header-mobile-fixed.aside-enabled.aside-fixed.aside-minimize-hoverable:nth-child(4) div.pb-35:nth-child(3) div.d-flex.flex-column.flex-root:nth-child(2) div.d-flex.flex-row.flex-column-fluid.page div.aside.aside-left.aside-fixed.d-flex.flex-column.flex-row-auto.noprint div.aside-menu-wrapper.flex-column-fluid div.aside-menu.my-4.scroll.ps.ps__rtl.ps--active-y div.ps__rail-y > div.ps__thumb-y).scrollTop=500");
+//    ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", templatesPage);
 
+    }
+
+    public void openTemplatesTab(){
         clickButton(templatesPage);
-
     }
 //    JavascriptExecutor executor = (JavascriptExecutor)driver;
 //executor.executeScript("arguments[0].click();", ele);
