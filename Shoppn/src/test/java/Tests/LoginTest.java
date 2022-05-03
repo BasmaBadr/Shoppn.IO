@@ -11,10 +11,12 @@ import java.time.Duration;
 
 public class LoginTest extends TestBase{
    LoginPage loginPage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
     @Test
     public void userCanLoginwithvalidUNandPW(){
         loginPage = new LoginPage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
 //        loginPage.Waiits();
         WebDriverWait wait = new WebDriverWait(driver , 20);
         wait.until(ExpectedConditions.visibilityOf(loginPage.Welcommessage));

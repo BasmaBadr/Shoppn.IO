@@ -11,12 +11,14 @@ public class StoreTest extends TestBase {
 
     LoginPage loginPage;
     StorePage storePage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
     @Test
     public void checkEditStoreTabOpen() throws InterruptedException {
         loginPage = new LoginPage(driver);
         storePage = new StorePage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", storePage.storeTab);
 

@@ -19,8 +19,8 @@ public class TestBrokenImagesTest extends TestBase{
 
      LoginPage loginPage;
      TestBrokenImagesPage testBrokenImagesPage;
-
-
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
 
       @Test
@@ -28,7 +28,7 @@ public class TestBrokenImagesTest extends TestBase{
           invalidImageCount = 0 ;
           loginPage = new LoginPage(driver);
           testBrokenImagesPage = new TestBrokenImagesPage(driver);
-          loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+          loginPage.loginWithValidUNandPW(email , password);
           Thread.sleep(20000);
           List<WebElement> imageList = driver.findElements(By.tagName("img"));
           for (WebElement imgElement : imageList)

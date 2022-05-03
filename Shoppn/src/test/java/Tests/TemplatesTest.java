@@ -14,12 +14,14 @@ import org.testng.annotations.Test;
 public class TemplatesTest extends TestBase {
     LoginPage loginPage;
     TemplatesPage templatesPage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
     @Test
     public void checkTemplatesOpen() throws InterruptedException {
         loginPage = new LoginPage(driver);
         templatesPage = new TemplatesPage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", templatesPage.templatesPage);
 

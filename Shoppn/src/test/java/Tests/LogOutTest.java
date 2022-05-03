@@ -11,12 +11,14 @@ import org.testng.annotations.Test;
 public class LogOutTest extends TestBase {
     LoginPage loginPage;
     LogOutPage logOutPage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
     @Test
     public void testLogoOut() throws InterruptedException {
         loginPage=new LoginPage(driver);
         logOutPage=new LogOutPage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", logOutPage.logOut);
         WebDriverWait wait = new WebDriverWait(driver ,20);

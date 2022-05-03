@@ -11,12 +11,14 @@ import org.testng.annotations.Test;
 public class AffiliateSettingsTest extends TestBase{
     LoginPage loginPage;
     AffiliateSettingsPage affiliateSettingsPage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
     @Test
     public void checkAffiliteSettingsTabOpen() throws InterruptedException {
         loginPage = new LoginPage(driver);
         affiliateSettingsPage = new AffiliateSettingsPage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", affiliateSettingsPage.affilliateMain);
         affiliateSettingsPage.openAffilatesSettingsTab();

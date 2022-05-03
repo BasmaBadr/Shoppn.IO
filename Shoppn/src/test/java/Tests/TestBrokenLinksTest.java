@@ -17,12 +17,14 @@ public class TestBrokenLinksTest extends TestBase {
 
     LoginPage loginPage;
     TestBrokenLinksPage testBrokenLinksPage;
+    String email = "jahiji7855@host1s.com";
+    String password = "12345678";
 
     @Test
     public void testBrokenLinks() throws InterruptedException {
         loginPage = new LoginPage(driver);
         testBrokenLinksPage = new TestBrokenLinksPage(driver);
-        loginPage.loginWithValidUNandPW("jahiji7855@host1s.com","12345678");
+        loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
        // testBrokenLinksPage.testBrokenLinks();
         List<WebElement> links = driver.findElements(By.tagName("a"));
