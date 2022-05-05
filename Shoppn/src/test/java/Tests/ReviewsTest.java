@@ -19,7 +19,7 @@ public class ReviewsTest extends TestBase {
         reviewsPage = new ReviewsPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", reviewsPage.reviewsTab);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", reviewsPage.reviewsTab);
 
         reviewsPage.openReviewTab();
         Assert.assertTrue(reviewsPage.reviewsTxt.getText().contains("تقيم المنتجات"));

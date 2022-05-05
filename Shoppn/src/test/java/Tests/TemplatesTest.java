@@ -23,10 +23,8 @@ public class TemplatesTest extends TestBase {
         templatesPage = new TemplatesPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", templatesPage.templatesPage);
-
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", templatesPage.templatesPage);
         templatesPage.openTemplatesTab();
-
         WebDriverWait wait = new WebDriverWait(driver ,20);
         wait.until(ExpectedConditions.visibilityOf(templatesPage.templatesText));
 

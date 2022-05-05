@@ -15,6 +15,7 @@ public class ReviewsPage extends PageBase {
 
     public void openReviewTab()
     {
+        scrollToElement(reviewsTab);
         clickButton(reviewsTab);
     }
 

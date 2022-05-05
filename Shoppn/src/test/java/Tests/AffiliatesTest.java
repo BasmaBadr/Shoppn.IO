@@ -20,7 +20,7 @@ public class AffiliatesTest extends TestBase {
         affiliatesPage = new AffiliatesPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", affiliatesPage.affilliateMain);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", affiliatesPage.affilliateMain);
 
         affiliatesPage.openAffilatesTab();
         Assert.assertTrue(affiliatesPage.affilliateText.getText().contains("المسوقين بالعمولة"));

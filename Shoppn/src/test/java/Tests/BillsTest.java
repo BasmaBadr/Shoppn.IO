@@ -19,7 +19,7 @@ public class BillsTest extends TestBase {
         billsPage = new BillsPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", billsPage.billsTab);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", billsPage.billsTab);
 
         billsPage.openBillsTab();
         Assert.assertTrue(billsPage.billsTxt.getText().contains("فواتيري"));

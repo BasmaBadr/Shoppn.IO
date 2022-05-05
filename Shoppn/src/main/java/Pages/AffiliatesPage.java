@@ -16,6 +16,7 @@ public class AffiliatesPage extends PageBase {
   public   WebElement affilliateText;
 
     public void openAffilatesTab(){
+        scrollToElement(affilliateMain);
         clickButton(affilliateMain);
         clickButton(affilliateTab);
     }

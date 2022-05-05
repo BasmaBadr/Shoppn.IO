@@ -10,6 +10,7 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 public class TemplatesPage extends PageBase{
     public TemplatesPage(WebDriver driver) {
         super(driver);
+        jse = (JavascriptExecutor) driver;
     }
     @FindBy(xpath = "//span[contains(text(),'القوالب')]")
    public WebElement templatesPage;
@@ -24,6 +25,7 @@ public class TemplatesPage extends PageBase{
     }
 
     public void openTemplatesTab(){
+        scrollToElement(templatesPage);
         clickButton(templatesPage);
     }
 //    JavascriptExecutor executor = (JavascriptExecutor)driver;

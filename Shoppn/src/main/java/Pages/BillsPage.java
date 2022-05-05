@@ -14,6 +14,7 @@ public class BillsPage extends PageBase {
 
     public void openBillsTab()
     {
+        scrollToElement(billsTab);
         clickButton(billsTab);
     }
 }

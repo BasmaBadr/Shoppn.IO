@@ -32,6 +32,7 @@ public class TestBase {
     public void takeScreenShot(ITestResult result) throws IOException {
         if (ITestResult.FAILURE == result.getStatus())
         {
+            System.out.println("Failed");
             // Create reference for screenshot
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);

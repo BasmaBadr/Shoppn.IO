@@ -20,7 +20,7 @@ public class StoreTest extends TestBase {
         storePage = new StorePage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", storePage.storeTab);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", storePage.storeTab);
 
         storePage.openStoreTab();
         Assert.assertTrue(storePage.storeTxt.getText().contains("تعديل تصميم المتجر"));

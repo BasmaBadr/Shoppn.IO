@@ -19,7 +19,7 @@ public class EditStoreDesignTest extends TestBase {
         editStoreDesignPage = new EditStoreDesignPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editStoreDesignPage.editStoreTab);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", editStoreDesignPage.editStoreTab);
 
         editStoreDesignPage.openEditStore();
         Assert.assertTrue(editStoreDesignPage.editStoreTxt.getText().contains("تعديل تصميم المتجر"));

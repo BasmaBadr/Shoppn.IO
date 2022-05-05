@@ -16,6 +16,7 @@ public class EditStoreDesignPage extends PageBase {
    public  WebElement editStoreTxt;
 
     public void openEditStore(){
+        scrollToElement(editStoreTab);
         clickButton(editStoreTab);
     }
 }

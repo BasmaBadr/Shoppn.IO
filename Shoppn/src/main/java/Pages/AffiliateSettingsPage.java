@@ -18,6 +18,7 @@ public class AffiliateSettingsPage extends PageBase {
     public   WebElement affilliateSettingsText;
 
     public void openAffilatesSettingsTab(){
+        scrollToElement(affilliateMain);
         clickButton(affilliateMain);
         clickButton(affilliateSettings);
     }

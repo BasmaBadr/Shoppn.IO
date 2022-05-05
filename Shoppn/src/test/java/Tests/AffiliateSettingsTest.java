@@ -20,7 +20,7 @@ public class AffiliateSettingsTest extends TestBase{
         affiliateSettingsPage = new AffiliateSettingsPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", affiliateSettingsPage.affilliateMain);
+//        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", affiliateSettingsPage.affilliateMain);
         affiliateSettingsPage.openAffilatesSettingsTab();
         Thread.sleep(20000);
         Assert.assertTrue(affiliateSettingsPage.affilliateSettingsText.getText().contains("اعدادات نظام التسويق بالعمولة"));

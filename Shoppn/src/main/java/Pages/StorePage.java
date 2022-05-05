@@ -16,6 +16,7 @@ public class StorePage extends PageBase {
    public WebElement storeTxt;
 
     public void openStoreTab(){
+        scrollToElement(storeTab);
         clickButton(storeTab);
     }
 
