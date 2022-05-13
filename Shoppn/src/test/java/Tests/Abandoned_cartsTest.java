@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 public class Abandoned_cartsTest extends TestBase {
     Abandoned_cartsPage abandonedCartsPage ;
     LoginPage loginPage;
+
     String email = "jahiji7855@host1s.com";
     String password = "12345678";
     @Test

@@ -22,7 +22,8 @@ public class PageBase {
     }
     public void scrollToElement( WebElement element)
     {
-        jse.executeScript("arguments[0].scrollIntoView(true);", element );
+        jse.executeScript("arguments[0].scrollIntoView(true);" ,element );
+
 
     }
     

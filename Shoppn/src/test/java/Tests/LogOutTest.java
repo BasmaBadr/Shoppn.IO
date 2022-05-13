@@ -20,12 +20,13 @@ public class LogOutTest extends TestBase {
         logOutPage=new LogOutPage(driver);
         loginPage.loginWithValidUNandPW(email , password);
         Thread.sleep(20000);
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", logOutPage.logOut);
-        WebDriverWait wait = new WebDriverWait(driver ,20);
-        wait.until(ExpectedConditions.visibilityOf(loginPage.Submit));
 
-        Assert.assertTrue(loginPage.Submit.getText().contains("تسجيل دخول"));
-        System.out.println(loginPage.Submit.getText());
+        logOutPage.logoutfromshoppn();
+//        WebDriverWait wait = new WebDriverWait(driver ,20);
+//        wait.until(ExpectedConditions.visibilityOf(loginPage.Submit));
+//
+//        Assert.assertTrue(loginPage.Submit.getText().contains("تسجيل دخول"));
+//        System.out.println(loginPage.Submit.getText());
 
 
     }
